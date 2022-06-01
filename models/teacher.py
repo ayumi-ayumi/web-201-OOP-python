@@ -3,6 +3,10 @@ import string
 
 class SchoolTeacher:
 
+    def __init__(self):
+        pass
+    
+    # parameterized constructor
     def __init__(self, name):
         self.name = name
 

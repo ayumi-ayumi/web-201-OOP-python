@@ -1,4 +1,4 @@
-from teacher import SchoolTeacher
+from models.teacher import SchoolTeacher
 
 class PhysicsTeacher(SchoolTeacher):
     def __init__(self,name, lab_number) -> None:
