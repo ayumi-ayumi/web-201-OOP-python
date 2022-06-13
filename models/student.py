@@ -6,14 +6,16 @@ class Student:
     #     self.name = ""
     #     self.grade = {}
     #     pass
-
-    # initialize class data/variables
+    # class parametrized contructor: 
+    # initializes class vairables / parameters to values passed
     def __init__(self, name, age, class_number):
         self.name = name
         self.age = age
         self.class_number = class_number
-        self.grade = {}
+        self.grade = {} # dictionary of type: Dict[String: Character] | [subject:grade]
 
-    def calculate_dob(self, current_year):
+    # func to calculate the year of birth, since the age of the student is known.
+    # using the current year
+    def calculate_year_of_birth(self, current_year):
         pass
 
