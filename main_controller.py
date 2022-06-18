@@ -16,7 +16,7 @@ print(student.age) # 29
 print(student.class_number) # 3
 print(student.name) # Jyotsna
 
-SchoolStudents().enroll_student(student)
+SchoolStudents(student).enroll_student()
 SchoolStudents().all_students()
 
 # TODO: put into a view

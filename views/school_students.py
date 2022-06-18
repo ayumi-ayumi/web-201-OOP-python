@@ -1,4 +1,3 @@
-
 # This class is used to store/maintain the collection of students in the school.
 class SchoolStudents:
 
@@ -18,7 +17,8 @@ class SchoolStudents:
             
     # TODO Task1.1:implement a func to get all students' data
     def fetch_all_student_data(self):
-        pass
+        return self.enrolled_students
+        
 
     # TODO Task1.2:implement a function get student with name
     def fetch_data_with_student_name(self):
