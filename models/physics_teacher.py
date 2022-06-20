@@ -1,4 +1,4 @@
-from teacher import SchoolTeacher
+from .teacher import SchoolTeacher
 
 # This class inherits from parent class: SchoolTeacher
 class PhysicsTeacher(SchoolTeacher):
@@ -15,5 +15,5 @@ class PhysicsTeacher(SchoolTeacher):
     def get_lab_number(self):
         return self.lab_number
 
-x = PhysicsTeacher('Amy', 23)
-print(x.name)
+# x = PhysicsTeacher('Amy', 23)
+# print(x.name)

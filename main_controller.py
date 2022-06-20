@@ -1,6 +1,5 @@
-import imp
 from models.student import Student
-from models import physics_teacher
+from models.physics_teacher import PhysicsTeacher
 from views.school_students import SchoolStudents
 from models.subject import SchoolSubject
 
@@ -15,13 +14,14 @@ student = Student(name="Jyotsna", age=29, class_number=3)
 print(student.age) # 29
 print(student.class_number) # 3
 print(student.name) # Jyotsna
+print(student.calculate_year_of_birth())
 
-SchoolStudents(student).enroll_student()
+SchoolStudents().enroll_student(student)
 SchoolStudents().all_students()
 
 # TODO: put into a view
 # enroll_teachers()
-physics_teacher_1 = physics_teacher.PhysicsTeacher(name="Mia", lab_number="101")
+physics_teacher_1 = PhysicsTeacher.PhysicsTeacher(name="Mia", lab_number="101")
 
 print("Teacher details:")
 print("name:"+physics_teacher_1.name, "lab number:" + physics_teacher_1.get_lab_number())

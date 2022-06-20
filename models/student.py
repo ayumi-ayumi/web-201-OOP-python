@@ -1,3 +1,6 @@
+import datetime
+
+
 class Student:
 
     # this is all defalt 書かなくてもOK
@@ -6,6 +9,7 @@ class Student:
     #     self.name = ""
     #     self.grade = {}
     #     pass
+
     # class parametrized contructor: 
     # initializes class vairables / parameters to values passed
     def __init__(self, name, age, class_number):
@@ -16,6 +20,11 @@ class Student:
 
     # func to calculate the year of birth, since the age of the student is known.
     # using the current year
-    def calculate_year_of_birth(self, current_year):
-        pass
+    def calculate_year_of_birth(self):
+        today = datetime.date.today()
+        current_year = today.year
+        year_of_birth = current_year - self.age
+        return year_of_birth
 
+# x = Student('Amy', 24, 1)
+# print(x.calculate_year_of_birth())

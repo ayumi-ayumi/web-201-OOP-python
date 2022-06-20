@@ -1,5 +1,10 @@
 # This class is used to store/maintain the collection of students in the school.
-class SchoolStudents:
+
+
+from models.student import Student
+
+
+class SchoolStudents(Student):
 
     # constructor for the class
     # initilizes the class variable enroll_students to an empty list
@@ -22,4 +27,6 @@ class SchoolStudents:
 
     # TODO Task1.2:implement a function get student with name
     def fetch_data_with_student_name(self):
-        pass
+        for each_student in self.enrolled_students:
+            return each_student.name
+
