@@ -1,7 +1,7 @@
 from teacher import SchoolTeacher
 
 # This class inherits from parent class: SchoolTeacher
-class PhysicsTeacher(SchoolTeacher):
+class ChemistryTeacher(SchoolTeacher):
 
     # paramterized constructor: initializes class parameters name, lab_number
     def __init__(self,name, lab_number) -> None:
@@ -15,5 +15,5 @@ class PhysicsTeacher(SchoolTeacher):
     def get_lab_number(self):
         return self.lab_number
 
-x = PhysicsTeacher('Amy', 23)
+x = ChemistryTeacher('Amy', 23)
 print(x.name)

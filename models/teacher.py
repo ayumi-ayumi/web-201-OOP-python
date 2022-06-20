@@ -1,6 +1,5 @@
 import string
 
-
 class SchoolTeacher:
 
     # parametrized contructor to initialize class variable name.
