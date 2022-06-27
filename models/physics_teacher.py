@@ -1,6 +1,8 @@
-from teacher import SchoolTeacher
 
 # This class inherits from parent class: SchoolTeacher
+from models.teacher import SchoolTeacher
+
+
 class PhysicsTeacher(SchoolTeacher):
 
     # paramterized constructor: initializes class parameters name, lab_number

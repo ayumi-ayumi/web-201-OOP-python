@@ -21,6 +21,7 @@ class SchoolTeachers(SchoolTeacher):
         for each_teacher in self.enrolled_teachers:
             print("Name :" + each_teacher.name)
             print("Lab number :" + each_teacher.lab_number)
+            print("Sports :" + each_teacher.sports)
 
     # TODO Task2.3: implement a func to get all teachers' data
     def fetch_all_teacher_data(self):

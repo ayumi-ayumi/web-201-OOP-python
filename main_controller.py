@@ -1,5 +1,6 @@
-from models.student import Student
+from collections import abc
 from models.physics_teacher import PhysicsTeacher
+from models.student import Student
 from views.school_students import SchoolStudents
 from models.subject import SchoolSubject
 
@@ -7,17 +8,23 @@ from models.subject import SchoolSubject
 # This file is just for our convenience for now to print and check methods and their behaviour.
 # student object
 # Student is data type / Class is a data type - eg. strings, Int, floats
-# student_1 = Student()
-# print(student_1.age)
-student = Student(name="Jyotsna", age=29, class_number=3)
-# access class variables
-print(student.age) # 29
-print(student.class_number) # 3
-print(student.name) # Jyotsna
-print(student.calculate_year_of_birth())
 
-SchoolStudents().enroll_student(student)
-SchoolStudents().all_students()
+student1 = Student(name="Jyotsna", age=29, class_number=3)
+student2 = Student(name="Ayumi", age=19, class_number=1)
+student3 = Student(name="Koko", age=30, class_number=5, )
+# access class variables
+# print(student1) #Object ID で出てくる
+# print(student1.age) # 29
+# print(student1.class_number) # 3
+# print(student1.name) # Jyotsna
+# print(student1.calculate_year_of_birth())
+
+abcSchool = SchoolStudents()
+abcSchool.enroll_student(student1)
+abcSchool.enroll_student(student2)
+abcSchool.enroll_student(student3)
+abcSchool.all_students()
+abcSchool.fetch_data_with_student_name()
 
 # TODO: put into a view
 # enroll_teachers()
