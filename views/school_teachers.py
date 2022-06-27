@@ -1,6 +1,11 @@
 
 #TODO Task2.2: This class is used to store/maintain the collection of teachers in the school.
-class SchoolTeachers:
+
+
+from models.teacher import SchoolTeacher
+
+
+class SchoolTeachers(SchoolTeacher):
 
     # constructor for the class
     # initilizes the class variable enrolled_teachers to an empty list
@@ -15,6 +20,7 @@ class SchoolTeachers:
     def all_teachers(self):
         for each_teacher in self.enrolled_teachers:
             print("Name :" + each_teacher.name)
+            print("Lab number :" + each_teacher.lab_number)
 
     # TODO Task2.3: implement a func to get all teachers' data
     def fetch_all_teacher_data(self):

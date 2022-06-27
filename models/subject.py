@@ -1,12 +1,10 @@
-
-
 class SchoolSubject:
-
+  
     # paramterized constructor: to initialize class parameters.
     # name and syllabus is an empty dictionary.
     def __init__(self, name):
         self.name = name
-        self.syllabus = {} # dictionary of type: Dict[Number:String] | chapter_number:chapter_name
+        self.syllabus = {} # dictionary of type: Dict[Number:String] | chapter_number:chapter_name (1:'Basic')
 
     # func to get the name of the subject.
     def get_name(self):
@@ -17,11 +15,14 @@ class SchoolSubject:
         self.chapter_number = chapter_number
         self.chapter_name = chapter_name
         self.syllabus[chapter_number] = chapter_name
-        # return self.syllabus
+        # print(self.syllabus)
+        return self.syllabus
 
     # func to get details of the syllabus.
     def get_syllabus(self):
         return self.syllabus
 
-# x = SchoolSubject('math')
-# print(x.put_syllabus(32, 'step1'))
+x = SchoolSubject('math')
+print(x.name)
+x.put_syllabus(1, 'basic')
+print(x.get_syllabus())

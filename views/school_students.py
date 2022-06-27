@@ -19,11 +19,13 @@ class SchoolStudents(Student):
     def all_students(self):
         for each_student in self.enrolled_students:
             print("Name :" + each_student.name)
+            print("Age :" + each_student.age)
+            print("Class number :" + each_student.class_number)
+            print("Grade :" + each_student.grade)
             
     # TODO Task1.1:implement a func to get all students' data
     def fetch_all_student_data(self):
         return self.enrolled_students
-        
 
     # TODO Task1.2:implement a function get student with name
     def fetch_data_with_student_name(self):

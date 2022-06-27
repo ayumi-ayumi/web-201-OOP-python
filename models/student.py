@@ -16,7 +16,7 @@ class Student:
         self.name = name
         self.age = age
         self.class_number = class_number
-        self.grade = {} # dictionary of type: Dict[String: Character] | [subject:grade]
+        self.grade = {} # dictionary of type: Dict[String: Character] | [subject:grade] ("Math:"A")
 
     # func to calculate the year of birth, since the age of the student is known.
     # using the current year

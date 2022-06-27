@@ -1,7 +1,7 @@
 from models.student import Student
 from views.school_students import SchoolStudents
  
-class TestSchoolStudents:
+class TestSchoolTeachers:
  
     # TODO Task1.1: write test
     def test_enroll_student(self):

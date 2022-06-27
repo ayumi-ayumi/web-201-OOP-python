@@ -1,5 +1,8 @@
 
-class SchoolSubjects:
+from models.subject import SchoolSubject
+
+
+class SchoolSubjects(SchoolSubject):
 
     def __init__(self):
         self.enlisted_subject = []
@@ -13,3 +16,4 @@ class SchoolSubjects:
     def view_subject_syllabus(self):
         for each_subject in self.enlisted_subject:
             print("Name :" + each_subject.name)
+            print("Syllabus :" + each_subject.syllabus)
