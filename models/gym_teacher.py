@@ -14,6 +14,6 @@ class GymTeacher(SchoolTeacher):
     # function to get the lab number
     def get_sports(self):
         return self.sports
-
-# x = PhysicsTeacher('Amy', 23)
-# print(x.name)
+ 
+# z = GymTeacher('LOL', 'tennis')
+# print(z.get_sports())

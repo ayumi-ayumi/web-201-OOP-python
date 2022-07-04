@@ -15,5 +15,5 @@ class ChemistryTeacher(SchoolTeacher):
     def get_lab_number(self):
         return self.lab_number
 
-x = ChemistryTeacher('Amy', 23)
-print(x.get_lab_number())
+# z = ChemistryTeacher('JOJO', 33)
+# print(z.get_lab_number())

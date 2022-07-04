@@ -12,11 +12,11 @@ class Student:
 
     # class parametrized contructor: 
     # initializes class vairables / parameters to values passed
-    def __init__(self, name, age, class_number):
+    def __init__(self, name, age, class_number, grade):
         self.name = name
         self.age = age
         self.class_number = class_number
-        self.grade = {} # dictionary of type: Dict[String: Character] | [subject:grade] ("Math:"A")
+        self.grade = grade # {}dictionary of type: Dict[String: Character] | [subject:grade] ("Math:"A")
 
     # func to calculate the year of birth, since the age of the student is known.
     # using the current year
@@ -26,5 +26,6 @@ class Student:
         year_of_birth = current_year - self.age
         return year_of_birth
 
-# x = Student('Amy', 24, 1)
-# print(x.calculate_year_of_birth())
+# today = Student('Today', 24, 1, {'math':'A'})
+# print(today.calculate_year_of_birth())
+# print(today.grade)

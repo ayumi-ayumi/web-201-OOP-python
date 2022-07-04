@@ -10,8 +10,8 @@ class TestSchoolStudents:
         # print(type(schoolStudents))
 
         # variable of type Student
-        first_student_in_class = Student("Maria", 20, 5)
-        second_student_in_class = Student(name="Jyotsna", age=20, class_number=5)
+        first_student_in_class = Student("Maria", 20, 5,  {'Math':"A", "Gym": 'F'})
+        second_student_in_class = Student(name="Jyotsna", age=20, class_number=5, grade={'Math':"C", "Gym": 'C'})
         # first_student_in_class = Student(name="Maria", age=20, class_number=5)
 
         # METHOD TO TEST: enroll your first student
@@ -20,7 +20,7 @@ class TestSchoolStudents:
         assert schoolStudents.enrolled_students == [first_student_in_class]
 
         #これは違うオブジェクトIDなので不正解
-        # assert schoolStudents.enrolled_students == [Student(name="Maria", age=20, class_number=5)]
+        # assert schoolStudents.enrolled_students == [Student(name="Maria", age=20, class_number=5, grade= {'Math':"A", "Gym": 'F'})]
 
     # TODO Task1.2: write test
     def test_fetch_all_student_data(self):  
@@ -28,8 +28,8 @@ class TestSchoolStudents:
         schoolStudents = SchoolStudents()
 
         # variable of type Student
-        first_student_in_class = Student(name="Maria", age=20, class_number=5)
-        second_student_in_class = Student(name="Jyotsna", age=20, class_number=5)
+        first_student_in_class = Student(name="Maria", age=20, class_number=5, grade= {'Math':"A", "Gym": 'F'})
+        second_student_in_class = Student(name="Jyotsna", age=20, class_number=5, grade = {'Math':"C", "Gym": 'C'})
 
         # enroll a student
         schoolStudents.enroll_student(first_student_in_class)
@@ -46,7 +46,7 @@ class TestSchoolStudents:
 
         schoolStudents = SchoolStudents()
 
-        first_student_in_class = Student(name="Maria", age=20, class_number=5)
+        first_student_in_class = Student(name="Maria", age=20, class_number=5,grade = {'Math':"C", "Gym": 'C'} )
         # second_student_in_class = Student(name="Jyotsna", age=20, class_number=5)
         # third_student_in_class = Student(name="Ayumi", age=10, class_number=50)
 

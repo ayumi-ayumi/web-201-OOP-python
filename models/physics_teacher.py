@@ -1,12 +1,14 @@
 
 # This class inherits from parent class: SchoolTeacher
-from models.teacher import SchoolTeacher
+
+
+from .teacher import SchoolTeacher
 
 
 class PhysicsTeacher(SchoolTeacher):
 
     # paramterized constructor: initializes class parameters name, lab_number
-    def __init__(self,name, lab_number) -> None:
+    def __init__(self, name, lab_number) -> None:
 
         # super() is a function call to the constructor of the parent class. 
         # (hint: check the parent class constructor definition.)
@@ -18,4 +20,4 @@ class PhysicsTeacher(SchoolTeacher):
         return self.lab_number
 
 # x = PhysicsTeacher('Amy', 23)
-# print(x.name)
+# print(x.get_lab_number())

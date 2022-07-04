@@ -21,13 +21,15 @@ class SchoolTeachers(SchoolTeacher):
         for each_teacher in self.enrolled_teachers:
             print("Name :" + each_teacher.name)
             print("Lab number :" + each_teacher.lab_number)
-            print("Sports :" + each_teacher.sports)
+            # print("Sports :" + each_teacher.sports)
 
     # TODO Task2.3: implement a func to get all teachers' data
     def fetch_all_teacher_data(self):
         return self.enrolled_teachers
+        # print(self.enrolled_teachers)
 
     # TODO Task2.4: implement a function get teacher with name
     def fetch_data_with_teacher_name(self):
         for each_teacher in self.enrolled_teachers:
             return each_teacher.name
+            # print(each_teacher.name)

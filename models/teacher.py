@@ -9,3 +9,6 @@ class SchoolTeacher:
     #function to get the name of the teacher
     def get_name(self) -> string:
         return self.name
+
+# y = SchoolTeacher('Maus')
+# print(y.get_name())

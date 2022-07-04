@@ -17,3 +17,6 @@ class SchoolSubjects(SchoolSubject):
         for each_subject in self.enlisted_subject:
             print("Name :" + each_subject.name)
             print("Syllabus :" + each_subject.syllabus)
+
+classA_syllabus = SchoolSubjects()            
+classA_syllabus.enlist_a_subject('math')

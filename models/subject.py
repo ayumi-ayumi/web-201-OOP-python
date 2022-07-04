@@ -4,7 +4,7 @@ class SchoolSubject:
     # name and syllabus is an empty dictionary.
     def __init__(self, name):
         self.name = name
-        self.syllabus = {} # dictionary of type: Dict[Number:String] | chapter_number:chapter_name (1:'Basic')
+        self.syllabus = {} # {}dictionary of type: Dict[Number:String] | chapter_number:chapter_name (1:'Basic')
 
     # func to get the name of the subject.
     def get_name(self):
